@@ -1,0 +1,10 @@
+<!--<h1>My Name is :{{name | uppercase}}</h1>
+<h2>Medium Date is:{{myDate | date:'medium'}}</h2>
+<h2>ShortTime Date is:{{myDate | date:'shortTime'}}</h2>
+<h2>MM:SS Date is:{{myDate | date:'mm:ss'}}</h2>-->
+<div class="container">
+    <ng-container *ngFor="let stud of myStudent">
+        <h2>Name : {{stud.name |mypipe:stud.gender}}</h2>
+        <h2>Gener: {{stud.gender}}</h2>
+    </ng-container>
+</div>
